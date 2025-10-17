@@ -33,6 +33,7 @@ This diagram illustrates the two separate pipeline flows based on Git branch act
 Added data check step after deploying to Dev DB
 
 ## Files
+
 | File | Description |
 | :--- | :--- |
 | **prValidation.yml** | Executes build validation during Pull Requests. No deployment. |
