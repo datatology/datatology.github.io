@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Datatology - Projects by Youngmi</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VZH53Y4T76"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VZH53Y4T76');
+    </script>
+    <style>
+        :root {
+            --bg: #0f1117;
+            --surface: #1a1d27;
+            --border: #2a2d3a;
+            --accent: #4f9cf9;
+            --accent-dim: #1e3a5f;
+            --text: #e2e8f0;
+            --text-muted: #7a8599;
+            --tag-bg: #1e2535;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 60px 0 80px;
+        }
+
+        /* Header */
+        .header {
+            margin-bottom: 60px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: var(--accent);
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--text);
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 56px;
+        }
+
+        .section-title {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        /* Project cards */
+        .project-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px 24px;
+            margin-bottom: 12px;
+            transition: border-color 0.2s;
+        }
+
+        .project-card:hover {
+            border-color: var(--accent);
+        }
+
+        .project-card a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            display: block;
+        }
+
+        .project-card a:hover {
+            color: var(--accent);
+        }
+
+        .project-tag {
+            display: inline-block;
+            background: var(--tag-bg);
+            color: var(--accent);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-top: 8px;
+            margin-right: 4px;
+        }
+
+        /* Blog cards */
+        .blog-card {
+            border-bottom: 1px solid var(--border);
+            padding: 20px 0;
+        }
+
+        .blog-card:last-child {
+            border-bottom: none;
+        }
+
+        .blog-card a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .blog-card a:hover {
+            color: var(--accent);
+        }
+
+        .blog-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 6px;
+        }
+
+        .blog-date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .blog-tag {
+            display: inline-block;
+            background: var(--tag-bg);
+            color: var(--accent);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        .blog-desc {
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-top: 6px;
+        }
+
+        /* Coming soon */
+        .coming-soon {
+            color: var(--text-muted);
+            font-size: 13px;
+            font-style: italic;
+            padding: 16px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="header">
+        <div class="header-label">datatology.github.io</div>
+        <h1>Data Engineering & DBA</h1>
+        <p>Projects and technical writing by Youngmi · SQL Server · Azure · ETL · Security</p>
+    </div>
+
+    <!-- Projects -->
+    <div class="section">
+        <div class="section-title">Projects</div>
+
+        <div class="project-card">
+            <a href="/AzureDevOps">Azure DevOps CI/CD for multi-stage Azure SQL Database (Dev/Prod) deployment</a>
+            <span class="project-tag">Azure DevOps</span>
+            <span class="project-tag">Azure SQL</span>
+            <span class="project-tag">CI/CD</span>
+        </div>
+
+        <div class="project-card">
+            <a href="/AOAG.jpg">SQL Server Always On Availability Group on Azure VMs with Domain Controller</a>
+            <span class="project-tag">SQL Server</span>
+            <span class="project-tag">Always On AG</span>
+            <span class="project-tag">HA/DR</span>
+        </div>
+
+        <div class="project-card">
+            <a href="/HealthConceptMap.jpg">Power BI & Azure Fabric dashboard for OMOP SNOMED and i2b2 concept hierarchy</a>
+            <span class="project-tag">Power BI</span>
+            <span class="project-tag">Azure Fabric</span>
+            <span class="project-tag">Healthcare</span>
+        </div>
+    </div>
+
+    <!-- Blog -->
+    <div class="section">
+        <div class="section-title">Technical Blog</div>
+
+        <div class="blog-card">
+            <a href="/blog/sql-server-audit-encryption.html">SQL Server Audit & Encryption: A Practical Guide for Compliance</a>
+            <div class="blog-meta">
+                <span class="blog-date">2026-07-07</span>
+                <span class="blog-tag">SQL Server</span>
+                <span class="blog-tag">Security</span>
+            </div>
+            <div class="blog-desc">TDE, Always Encrypted, Column-level Encryption, and audit trail design for HIPAA and SOX compliance.</div>
+        </div>
+
+        <div class="coming-soon">More posts coming soon — Azure SQL performance tuning, pgvector RAG pipelines, Databricks Delta Lake...</div>
+    </div>
+
+</div>
+</body>
+</html>
